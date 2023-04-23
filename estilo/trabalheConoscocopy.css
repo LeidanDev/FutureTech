@@ -1,0 +1,132 @@
+@import "./headerFooter.css";
+main{
+    width: 50%;
+    min-height: 700px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+main h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#formulario2{
+    width: 50%;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items:center;
+   /* background-color: aliceblue;*/
+}
+.caixaTexto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    width: 100%;
+    margin: 10px;
+}
+.caixaTextoFile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    width: 100%;
+    margin: 10px;
+    
+}
+
+.caixaTexto input, .caixaTexto select,.caixaButton input {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+   /* background-color: var(--cinzaFormulario);*/
+}
+/*
+.caixaTexto input:focus-visible, .caixaTexto select:focus-visible,.caixaTexto textarea:focus-visible{
+    background-color: var(--brancoLetras);
+}
+*/
+.caixaButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.caixaTexto input, .caixaTexto select{
+    height: 30px;
+}
+.caixaButton input[type="button"] {
+    width: 60%;
+    height: 40px;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--azulBotoes);
+    color: var(--brancoLetras);
+    cursor: pointer;
+}
+.caixaButton input[type="button"]:hover{
+    background-color:var(--amareloHouver);
+    color: var(--pretoPrincipal);
+}
+:placeholder-shown{
+    color: var(--cinzaPlaceHolder);
+}
+.caixaCheck{
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: flex-start;
+    font-size: 10px;
+    padding: 10px;
+}
+.caixaCheck input{
+    margin: 10px;
+    padding: 10px;
+}
+
+/*************************************************/
+
+input[type="file"]{
+    display: none;
+}
+.infoFile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#labelFile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 30px;
+    border: none;
+    border-radius: 10px 0 0 10px ;
+    background-color: rgb(64, 64, 64);
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    cursor: pointer;
+}
+#labelFile:hover{
+    color: rgb(255, 247, 1);
+}
+.caixaTextoFile{
+    margin-top: 20px;
+    background-color: rgb(36, 36, 36);
+    border: none;
+    border-radius: 10px;
+}
+.pathArquivo{
+    margin-left: 10px;
+    font-size: 13px;
+    color: rgb(190, 190, 190);
+}

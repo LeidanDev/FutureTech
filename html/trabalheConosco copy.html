@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhe Conosco</title>
+  <!--<link rel="stylesheet" href="../estilo/headerFooter.css">-->
+  <link rel="stylesheet" href="../estilo/trabalheConoscocopy.css">
+  <link rel="stylesheet" href="../estilo/mensagem.css">
+  <!--<script src="../scripts/validacaoFormulario.js" defer></script>-->
+  <script src="../scripts/trabalheConoscocopy.js" defer></script>
+  <script src="../scripts/menuLateral.js" defer></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="conteudo">
+      <img src="../imagens/headerFooter/logo.png" alt="Logo da empresa" class="logotipoMedio" />
+      <img src="../imagens/headerFooter/logoPeq.png" alt="Logo da empresa" class="logoPrincipalPequeno" />
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./solucoes.html">Soluções</a></li>
+          <li><a href="./portifolio.html">Portifólio</a></li>
+          <li><a href="./quemSomos.html">Quem Somos</a></li>
+          <li><a href="./faleConosco.html">Fale Conosco</a></li>
+        </ul>
+      </nav>
+      <input type="checkbox" name="menuRetratil" id="menuRetratil" onclick="abrirMenu()">
+    </div>
+  </header>
+  <main>
+    <div class="poupMensagem" id="poupPersonalizado">
+      <div class="poupConteiner">
+        <img src="../imagens/conteudos/faleConosco/logo de fundo 2.png" alt="">
+        <div class="textoExplicativo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" id="iconExclamacao" class="bi bi-exclamation-diamond-fill" viewBox="0 0 16 16">
+              <path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" id="iconError" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" id="iconCorrect" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+              <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+            </svg>
+          <p class="explicacao">Texto Basico de explicação</p>
+        </div>
+        <button class="ok">Entendi</button>
+      </div>
+    </div>
+    <section class="formulario2">
+      <h2 class="trabConosco">Trabalhe Conosco</h2>
+      <form action="">
+        <div class="caixaTexto">
+          <label for="nome" class="nomeLabel">Nome Completo:</label>
+          <input type="text" id="nome" placeholder=" Nome Completo" />
+          <p class="nomeHelper"></p>
+        </div>
+        <div class="caixaTexto">
+          <label for="email" class="emailLabel">E-mail:</label>
+          <input type="email" name="" id="email" placeholder=" E-mail" />
+          <p class="emailHelper"></p>
+        </div>
+        <div class="caixaTexto">
+          <label for="telefone" class="telefoneLabel">Telefone:</label>
+          <input type="tel" name="" id="telefone" placeholder="Telefone" />
+          <p class="telHelper"></p>
+        </div>
+        <div class="caixaTexto">
+          <label for="whatsapp" class="whatsappLabel">Whatsapp:</label>
+          <input type="tel" name="" id="whatsapp" placeholder="Whatsapp" />
+          <p class="whatsHelper"></p>
+
+        </div>
+        <div class="caixaTexto">
+          <label for="areaInter" class="areaInter">Área de Interesse</label>
+          <select name="" id="areaInter">
+            <option value="emBranco">Selecione a opção</option>
+            <option value="comercial">Comercial</option>
+            <option value="administrativa">Administrativa</option>
+            <option value="tecnica">Técnica</option>
+            <option value="gerencial">Gerencial</option>
+            <option value="diretoria">Diretoria</option>
+          </select>
+          <p class="selectHelper"></p>
+        </div>
+        <div class="caixaTextoFile">
+          <div class="infoFile">
+              <label for="anexarCur" id="labelFile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-pdf-fill" viewBox="0 0 16 16">
+                  <path d="M5.523 10.424c.14-.082.293-.162.459-.238a7.878 7.878 0 0 1-.45.606c-.28.337-.498.516-.635.572a.266.266 0 0 1-.035.012.282.282 0 0 1-.026-.044c-.056-.11-.054-.216.04-.36.106-.165.319-.354.647-.548zm2.455-1.647c-.119.025-.237.05-.356.078a21.035 21.035 0 0 0 .5-1.05 11.96 11.96 0 0 0 .51.858c-.217.032-.436.07-.654.114zm2.525.939a3.888 3.888 0 0 1-.435-.41c.228.005.434.022.612.054.317.057.466.147.518.209a.095.095 0 0 1 .026.064.436.436 0 0 1-.06.2.307.307 0 0 1-.094.124.107.107 0 0 1-.069.015c-.09-.003-.258-.066-.498-.256zM8.278 4.97c-.04.244-.108.524-.2.829a4.86 4.86 0 0 1-.089-.346c-.076-.353-.087-.63-.046-.822.038-.177.11-.248.196-.283a.517.517 0 0 1 .145-.04c.013.03.028.092.032.198.005.122-.007.277-.038.465z"/>
+                  <path fill-rule="evenodd" d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm.165 11.668c.09.18.23.343.438.419.207.075.412.04.58-.03.318-.13.635-.436.926-.786.333-.401.683-.927 1.021-1.51a11.64 11.64 0 0 1 1.997-.406c.3.383.61.713.91.95.28.22.603.403.934.417a.856.856 0 0 0 .51-.138c.155-.101.27-.247.354-.416.09-.181.145-.37.138-.563a.844.844 0 0 0-.2-.518c-.226-.27-.596-.4-.96-.465a5.76 5.76 0 0 0-1.335-.05 10.954 10.954 0 0 1-.98-1.686c.25-.66.437-1.284.52-1.794.036-.218.055-.426.048-.614a1.238 1.238 0 0 0-.127-.538.7.7 0 0 0-.477-.365c-.202-.043-.41 0-.601.077-.377.15-.576.47-.651.823-.073.34-.04.736.046 1.136.088.406.238.848.43 1.295a19.707 19.707 0 0 1-1.062 2.227 7.662 7.662 0 0 0-1.482.645c-.37.22-.699.48-.897.787-.21.326-.275.714-.08 1.103z"/>
+                </svg>
+                Anexar Currículo
+              </label>
+              <input type="file" name="anexarCur" id="anexarCur" onchange="validarAnexar()">
+              <p class="pathArquivo">Anexar arquivo word ou PDF.</p>
+            </div>
+          </div>
+          <p class="anexarHelper"></p>
+        </div>
+        <div class="caixaCheck">
+          <input type="checkbox" name="autorizacao" id="autorizacao">
+          <p>Autorizo o tratamento de dados por meio da Lei Geral de Proteção de Dados - nº 13.709. E declaro
+            conciência da solicitação de revogação do consentimento a qualquer momento pelo email
+            atendimento@future4tech.com</p>
+        </div>
+        <div class="caixaButton">
+          <input type="button" value="Enviar" />
+          <p class="ajudaEnvio"></p>
+
+        </div>
+      </form>
+    </section>
+  </main>
+
+</body>
+<footer>
+  <div class="conteudo">
+    <img src="../imagens/headerFooter/logoRodape.png" alt="Logo de tecnologia em nuvens" class="logotipoPequeno" />
+    <h4> &copy; Future 4 Tech</h4>
+    <div class="redeSocial">
+      <a href=""><img src="../imagens/headerFooter/linkedin.png" alt="linkedin" /></a>
+      <a href=""><img src="../imagens/headerFooter/whatsup.png" alt="Whats up" /></a>
+      <a href=""><img src="../imagens/headerFooter/instangran.png" alt="Instangran" /></a>
+    </div>
+  </div>
+</footer>
+
+</html>

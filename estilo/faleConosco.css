@@ -1,0 +1,143 @@
+@import "headerFooter.css";
+main{
+    width: 100%;
+    min-height: 700px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+main h2{
+    padding: 10px;
+    margin: 10px;
+}
+#formulario{
+    width: 60%;
+    min-width: 350px;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 30px;
+}
+form{
+    width: 90%;
+    padding: 10px;
+    
+}
+#informacoes{
+    width: 40%;
+    min-width: 350px;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 50px;
+}
+#enderecos{
+    width: 90%;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+#separacao{
+    height: 6px;
+    width: 100%;
+    background-color:var(--cinzaSeparacao);
+}
+.caixaTexto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+.redeSocial .imgConteudo{
+    width: 50px;
+}
+#localizacao{
+    width: 60%;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#localizacao p{
+    width: 90%;
+    min-width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+   /* margin:  25px 80px 25px 80px;*/
+}
+.caixaTexto{
+    width: 100%;
+    margin: 10px;
+}
+.caixaTexto input, .caixaTexto select,.caixaTexto textarea,.caixaButton input{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    /*background-color: var(--cinzaFormulario);*/
+}
+.caixaTexto input, .caixaTexto select,.caixaTexto textarea,.caixaButton input{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+   /* background-color: var(--cinzaFormulario);*/
+}
+/*
+.caixaTexto input:focus-visible, .caixaTexto select:focus-visible,.caixaTexto textarea:focus-visible{
+    background-color: var(--brancoLetras);
+}
+*/
+.caixaButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.caixaTexto input, .caixaTexto select{
+    height: 30px;
+}
+.caixaButton input[type="button"] {
+    width: 60%;
+    height: 40px;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--azulBotoes);
+    color: var(--brancoLetras);
+    cursor: pointer;
+}
+.caixaButton input[type="button"]:hover{
+    background-color:var(--amareloHouver);
+    color: var(--pretoPrincipal);
+}
+:placeholder-shown{
+    color: var(--cinzaPlaceHolder);
+}
+.caixaCheck{
+    min-width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: flex-start;
+    font-size: 10px;
+    padding: 10px;
+}
+.caixaCheck input{
+    margin: 10px;   
+}
+iframe{
+    width: 80%;
+    min-width:350px;
+    margin: 0 auto;
+}
+
+
+
